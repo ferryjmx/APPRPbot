@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-
 import com.starway.starrobot.R;
 import com.starway.starrobot.activity.BaseActivity;
 import com.starway.starrobot.activity.adapter.CommomListAdapter;
@@ -45,7 +44,6 @@ public class GuideFragment extends Fragment implements AdapterView.OnItemClickLi
                     .setObject(site)
             );
         }
-
         CommomListAdapter adapter = new CommomListAdapter(getContext(), R.layout.item_common, list);
         listView.setOnItemClickListener(this);
         listView.setOnItemLongClickListener(this);
@@ -53,7 +51,6 @@ public class GuideFragment extends Fragment implements AdapterView.OnItemClickLi
 
         return view;
     }
-
     /**
      * 设置列表项点击回调事件
      *

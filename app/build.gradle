@@ -76,3 +76,14 @@ dependencies {
     testImplementation "androidx.room:room-testing:$room_version"
 
 }
+//强制使用版本 为26.0.0 ，整治引包版本不同。
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.0.0'
+            }
+        }
+    }
+}

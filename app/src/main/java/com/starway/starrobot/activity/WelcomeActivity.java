@@ -92,12 +92,12 @@ public class WelcomeActivity extends BaseActivity {
     @Override
     public void handleMessage (Message msg) {
       super.handleMessage(msg);
-      switch (msg.what) {
-        case msgKey1:
-          mTime.setText(getTime());
-          break;
-        default:
-          break;
+          switch (msg.what) {
+              case msgKey1:
+                  mTime.setText(getTime());
+                  break;
+              default:
+                  break;
       }
     }
   };
@@ -130,16 +130,8 @@ public class WelcomeActivity extends BaseActivity {
     }
     return mYear + "年" + mMonth + "月" + mDay+"日"+"  "+"星期"+mWay+"  "+mHour+":"+mMinute+":"+mSecond;
   }
-
 /*
-*
-*
-*
 * 上面添加了时间功能
-*
-*
-*
-*
 * */
     private void initView() {
         handler = new Handler();

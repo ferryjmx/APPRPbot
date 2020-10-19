@@ -57,7 +57,10 @@
   <!-- Android O webview渲染 -->
   <meta-data
     android:name="android.webkit.WebView.EnableSafeBrowsing"
-    android:value="true"/>
+    android:value="true"
+      tools:replace="android:value"
+
+      />
 
   <application
     android:allowBackup="true"
