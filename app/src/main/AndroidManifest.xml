@@ -47,7 +47,8 @@
         android:screenOrientation="landscape"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".activity.IntroductionActivity"></activity>
+        <activity android:name=".activity.IntroductionActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".activity.SplashActivity"
             android:launchMode="singleTask">
